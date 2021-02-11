@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<include
+		android:id="@+id/toolbar"
+		layout="@layout/toolbar"
+		android:layout_height="25.5dp"
+		android:background="@android:color/background_light"
+		android:layout_marginBottom="12.5dp" />
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/main_content"
+		android:layout_below="@id/toolbar"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:background="#ffeeeeee"
+		android:contextClickable="false">
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:id="@+id/frameLayout1">
+			<ImageView
+				android:src="@mipmap/logosat"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/imageView1"
+				android:background="@android:color/background_light"/>
+		</FrameLayout>
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_marginTop="3dp"
+			android:layout_width="match_parent"
+			android:layout_height="50.0dp"
+			android:id="@+id/frameLayout9">
+			<DigitalClock
+				android:layout_width="match_parent"
+				android:id="@+id/digitalClock2"
+				android:gravity="center"
+				android:textSize="30dp"
+				android:layout_height="47.0dp"
+				android:background="#ffddceb7" />
+		</FrameLayout>
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:background="@android:color/background_dark"
+			android:layout_width="match_parent"
+			android:layout_height="2.0dp"
+			android:id="@+id/frameLayout14" />
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="60.5dp"
+			android:id="@+id/frameLayout10"
+			android:layout_marginBottom="1.5dp">
+			<TextView
+				android:text="PLACA"
+				android:digits="0123456789ABDEFGHIGLMNOPQRSTUVXZY"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/textView1"
+				android:foregroundGravity="center"
+				android:gravity="center|left"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="500dp"
+				android:textColor="@android:color/black"
+				android:textStyle="normal|bold"
+				android:textSize="20dp" />
+			<EditText
+				android:text=""
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/TxtPlaca"
+				android:textStyle="normal|bold"
+				android:layout_gravity="center"
+				android:inputType="textCapCharacters"
+				android:gravity="center"
+				android:maxLength="26"
+				android:layout_marginLeft="160dp"
+				android:layout_marginRight="300dp"
+				android:textSize="20dp" />
+			<TextView
+				android:text="ANO FAB."
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/textView1"
+				android:foregroundGravity="center"
+				android:gravity="center|left"
+				android:layout_marginLeft="250dp"
+				android:layout_marginRight="220dp"
+				android:textColor="@android:color/black"
+				android:textStyle="normal|bold"
+				android:textSize="20dp" />
+			<EditText
+				android:text=""
+				android:digits="0123456789"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/TxtAnoFab"
+				android:textStyle="normal|bold"
+				android:layout_gravity="center"
+				android:inputType="number"
+				android:gravity="center"
+				android:maxLength="4"
+				android:layout_marginLeft="310dp"
+				android:layout_marginRight="170dp"
+				android:textSize="20dp" />
+		</FrameLayout>
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_height="60.5dp"
+			android:layout_width="match_parent"
+			android:id="@+id/frameLayout16">
+			<TextView
+				android:text="PESO TARA"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/textView1"
+				android:foregroundGravity="center"
+				android:gravity="center|left"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="450dp"
+				android:textColor="@android:color/black"
+				android:textStyle="normal|bold"
+				android:textSize="20dp" />
+			<EditText
+				android:text=""
+				android:digits="0123456789"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/TxtPesoTara"
+				android:textStyle="normal|bold"
+				android:layout_gravity="center"
+				android:inputType="number"
+				android:gravity="center"
+				android:maxLength="7"
+				android:layout_marginLeft="190dp"
+				android:layout_marginRight="280dp"
+				android:textSize="20dp" />
+			<TextView
+				android:text="kg"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/textView3"
+				android:gravity="center|left"
+				android:layout_marginLeft="270dp"
+				android:layout_marginRight="300dp"
+				android:textStyle="normal|bold"
+				android:textSize="20dp" />
+		</FrameLayout>
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_height="60.5dp"
+			android:layout_width="match_parent"
+			android:id="@+id/frameLayout16">
+			<TextView
+				android:text="PESO BRUTO"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/textView1"
+				android:foregroundGravity="center"
+				android:gravity="center|left"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="450dp"
+				android:textColor="@android:color/black"
+				android:textStyle="normal|bold"
+				android:textSize="20dp" />
+			<EditText
+				android:text=""
+				android:digits="0123456789"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/TxtPesoBruto"
+				android:textStyle="normal|bold"
+				android:layout_gravity="center"
+				android:inputType="number"
+				android:gravity="center"
+				android:maxLength="7"
+				android:layout_marginLeft="190dp"
+				android:layout_marginRight="280dp"
+				android:textSize="20dp" />
+			<TextView
+				android:text="kg"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/textView3"
+				android:gravity="center|left"
+				android:layout_marginLeft="270dp"
+				android:layout_marginRight="300dp"
+				android:textStyle="normal|bold"
+				android:textSize="20dp" />
+		</FrameLayout>
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_height="60.5dp"
+			android:layout_width="match_parent"
+			android:id="@+id/frameLayout15">
+			<TextView
+				android:text="MONTADORA"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/textView2"
+				android:gravity="center|left"
+				android:layout_marginLeft="10dp"
+				android:textStyle="normal|bold"
+				android:layout_marginRight="420dp"
+				android:textSize="20dp" />
+			<Spinner
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/spinnermontadoras"
+				android:layout_marginLeft="180dp"
+				android:layout_marginRight="50dp" />
+		</FrameLayout>
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_height="60.5dp"
+			android:layout_width="match_parent"
+			android:id="@+id/frameLayout15">
+			<TextView
+				android:text="CATEGORIA"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/textView2"
+				android:gravity="center|left"
+				android:layout_marginLeft="10dp"
+				android:textStyle="normal|bold"
+				android:layout_marginRight="420dp"
+				android:textSize="20dp" />
+			<Spinner
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/spinnercategoria"
+				android:layout_marginLeft="180dp"
+				android:layout_marginRight="50dp" />
+		</FrameLayout>
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:background="@android:color/background_dark"
+			android:layout_width="match_parent"
+			android:layout_height="2.0dp"
+			android:id="@+id/frameLayout14" />
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="88.5dp"
+			android:id="@+id/frameLayout17">
+			<ImageButton
+				android:src="@drawable/save"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/SalvarVeiculo"
+				android:layout_marginLeft="60dp"
+				android:layout_marginRight="400dp"
+				android:background="@android:color/background_light"
+				android:layout_marginTop="5dp" />
+			<ImageButton
+				android:src="@drawable/voltar"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/VoltarVeiculo"
+				android:layout_marginLeft="400dp"
+				android:layout_marginRight="60dp"
+				android:background="@android:color/background_light"
+				android:layout_marginTop="5dp" />
+		</FrameLayout>
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:background="@android:color/background_dark"
+			android:layout_width="match_parent"
+			android:layout_height="2.0dp"
+			android:id="@+id/frameLayout14"
+			android:layout_marginTop="5dp" />
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_marginTop="1dp"
+			android:layout_width="match_parent"
+			android:layout_height="35dp"
+			android:id="@+id/frameLayout2">
+			<TextView
+				android:text="CÓDIGO         ANO        PESO TARA    PESO BRUTO    PLACA"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="match_parent"
+				android:textSize="20dp"
+				android:layout_height="match_parent"
+				android:id="@+id/textView1"
+				android:background="#ff000000"
+				android:backgroundTint="@android:color/black"
+				android:textColor="@android:color/background_light"
+				android:textStyle="bold|normal"/>
+		</FrameLayout>
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="362.0dp"
+			android:id="@+id/frameLayout18" >
+			<ListView
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/ListaVeiculos" />
+		</FrameLayout>
+
+	</LinearLayout>
+</RelativeLayout>
+
+

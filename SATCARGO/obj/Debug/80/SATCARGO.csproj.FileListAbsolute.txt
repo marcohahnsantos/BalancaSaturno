@@ -1,0 +1,2 @@
+E:\Projetos\SATURNO\SATCARGO\SATCARGO\obj\Debug\80\MonoAndroid,Version=v8.0.AssemblyAttributes.cs
+E:\Projetos\SATURNO\SATCARGO\SATCARGO\obj\Debug\80\SATCARGO.nuget.stamp

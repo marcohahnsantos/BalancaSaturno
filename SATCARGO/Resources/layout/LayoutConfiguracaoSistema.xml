@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<include
+		android:id="@+id/toolbar"
+		layout="@layout/toolbar"
+		android:background="@android:color/background_light" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/main_content"
+        android:layout_below="@id/toolbar"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:background="@android:color/background_light"
+        android:contextClickable="false">
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/frameLayout1">
+            <ImageView
+                android:src="@mipmap/logosat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView1"
+                android:background="@android:color/background_light"/>
+        </FrameLayout>
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="100.0dp"
+            android:id="@+id/frameLayout9">
+            <DigitalClock
+                android:layout_width="match_parent"
+                android:id="@+id/digitalClock1"
+                android:textSize="@android:dimen/notification_large_icon_height"
+                android:gravity="center"
+                android:layout_height="97.0dp"
+                android:background="#ffddceb7" />
+        </FrameLayout>
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="41.5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/frameLayout10">
+            <TextView
+                android:text="Tempo Captura Peso"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView4"
+                android:textStyle="bold|normal"
+                android:textSize="25dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                local:paddingEnd="250dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="200dp" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/spinnernrplataformas"
+                android:paddingLeft="120dp"
+                android:layout_marginLeft="320dp"
+                android:layout_marginRight="20dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="56.5dp"
+            android:id="@+id/frameLayout11" >
+            <TextView
+                android:text="Liberar Calibração Peso"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView4"
+                android:textStyle="bold|normal"
+                android:textSize="25dp"
+                android:textColor="@android:color/background_dark"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                local:paddingEnd="250dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="200dp" />
+            <Button
+                android:text="LIBERAR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnLiberarCalibracao"
+                android:layout_marginLeft="320dp"
+                android:layout_marginRight="50dp"
+                android:textStyle="bold|normal"
+                android:textSize="30dp"
+                android:layout_gravity="center|left"
+                android:textAllCaps="true"
+                android:textIsSelectable="true"
+                android:textColor="@android:color/holo_red_dark" />
+        </FrameLayout>
+        <FrameLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/frameLayout7"
+            android:background="#ffddceb7"
+            android:layout_marginTop="380dp"
+            android:defaultFocusHighlightEnabled="false">
+            <ImageButton
+                android:src="@drawable/save"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:id="@+id/BtnSalvarComunicacao"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="380dp"
+                android:layout_marginBottom="35dp"
+                android:background="@android:color/background_light"/>
+            <ImageButton
+                android:src="@drawable/voltar"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="60dp"
+                android:id="@+id/BtnSairComunicacao"
+                android:layout_marginLeft="400dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="35dp"
+                android:background="@android:color/background_light"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+

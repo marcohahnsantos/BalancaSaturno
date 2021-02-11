@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<include
+		android:id="@+id/toolbar"
+		layout="@layout/toolbar"
+		android:background="@android:color/background_light" />
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:id="@+id/main_content"
+		android:layout_below="@id/toolbar"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:background="#ff0d47a1"
+		android:contextClickable="false">
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="55.5dp"
+			android:id="@+id/frameLayout1">
+			<ImageView
+				android:src="@mipmap/logosat"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/imageView1"
+				android:background="@android:color/background_light" />
+		</FrameLayout>
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="29.0dp"
+			android:id="@+id/frameLayout2"
+			android:background="@android:color/background_light">
+			<TextView
+				android:text="Tipo de Comunicação"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/textView1"
+				android:paddingLeft="10dp" />
+		</FrameLayout>
+		<FrameLayout
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="57.0dp"
+			android:id="@+id/frameLayout3"
+			android:background="@android:color/background_light" >
+			<RadioGroup
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/radioGroup1">
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:checked="true"
+					android:text="Wifi"
+					android:id="@+id/radioButton1" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Bluetooth"
+					android:id="@+id/radioButton2" />
+				<RadioButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="RadioButton"
+					android:id="@+id/radioButton3" />
+			</RadioGroup>
+		</FrameLayout>
+	</LinearLayout>
+</RelativeLayout>

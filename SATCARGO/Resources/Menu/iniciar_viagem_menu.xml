@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>   
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:local="http://schemas.android.com/apk/res-auto">
+  <!--<item
+       android:id="@+id/executar_sangria"
+       local:showAsAction="never"
+       android:title="Efetuar Sangria" />
+  <item
+     android:id="@+id/cancelar_Venda"
+     local:showAsAction="never"
+     android:title="Cancelar Venda" />
+  <item
+       android:id="@+id/checkout"
+       local:showAsAction="never"
+       android:title="Efetuar Checkout" />
+  <item
+       android:id="@+id/checkin"
+       local:showAsAction="never"
+       android:title="Efetuar Checkin" />
+  <item
+       android:id="@+id/diferenca"
+       local:showAsAction="never"
+       android:title="Emitir Diferença" />
+  <item
+       android:id="@+id/excessos"
+       local:showAsAction="never"
+       android:title="Emitir Excesso" />
+  <item
+       android:id="@+id/relatorio_viagem"
+       local:showAsAction="never"
+       android:title="Relatório Viagem" />
+  <item
+       android:id="@+id/reimprimir_comprovante"
+       local:showAsAction="never"
+       android:title="Opções Cartão" />
+  <item
+       android:id="@+id/user_preferences"
+       local:showAsAction="never"
+       android:title="Preferencias do usuario" />
+  <item
+       android:id="@+id/Gerar_DB_Viagem"
+       local:showAsAction="never"
+       android:title="Gerar DB" />
+  <item
+       android:id="@+id/sair"
+       local:showAsAction="never"
+       android:title="Sair" />-->
+</menu>
